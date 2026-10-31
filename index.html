@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Punith B · Signals, Models & Machines</title>
+  <meta name="description" content="Portfolio of Punith B, Electronics and Communication Engineering graduate building across machine learning, embedded systems, and front-end web development.">
+  <meta name="theme-color" content="#060606">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Preloader ===== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-row mono"><span>Punith B</span><span>Portfolio</span></div>
+    <svg class="loader-wave" viewBox="0 0 600 100" preserveAspectRatio="none">
+      <path id="loader-path" pathLength="1" d="M0 50 L220 50 L232 40 L244 50 L262 50 L272 62 L286 6 L300 94 L312 50 L340 50 L356 34 L372 50 L600 50"/>
+    </svg>
+    <div class="loader-row mono"><span>Initialising signal</span><span id="loader-num">000</span></div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- ===== Nav ===== -->
+  <header class="nav" id="nav">
+    <a class="logo" href="#hero" data-magnetic aria-label="Punith B, back to top">PB<sup>©</sup></a>
+    <nav class="nav-links" aria-label="Main">
+      <a class="roll" href="#about"><span>About</span></a>
+      <a class="roll" href="#work"><span>Work</span></a>
+      <a class="roll" href="#skills"><span>Skills</span></a>
+      <a class="roll" href="#experience"><span>Experience</span></a>
+      <a class="roll" href="#contact"><span>Contact</span></a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="menu" data-magnetic>
+      <span class="menu-btn-text">Menu</span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="#about"><span>About</span></a>
+      <a href="#work"><span>Work</span></a>
+      <a href="#skills"><span>Skills</span></a>
+      <a href="#experience"><span>Experience</span></a>
+      <a href="#contact"><span>Contact</span></a>
+    </nav>
+    <p class="mono menu-foot">34punithb@gmail.com</p>
+  </div>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero">
+      <canvas class="hero-gl" id="hero-gl" aria-hidden="true"></canvas>
+      <div class="hero-top mono" data-hero-fade>
+        <p>Electronics &amp; Communication<br>Engineer · Class of 2023</p>
+        <p class="hero-hint">Move to bend the field<br><span>Click to send a pulse</span></p>
+        <p class="hero-clock">Bangalore, IN<br><span id="clock">--:--:--</span> IST</p>
+      </div>
+      <div class="hero-mid" data-hero-fade>
+        <p class="hero-tag">I turn <em>signals</em> into <em>systems</em> across machine learning, embedded hardware &amp; the web.</p>
+        <a class="scroll-cue mono" href="#about"><span class="scroll-line"></span>Scroll</a>
+      </div>
+      <h1 class="hero-name" id="hero-name" aria-label="Punith B">PUNITH B</h1>
+    </section>
+
+    <!-- ===== Marquee ===== -->
+    <section class="bands" aria-label="Disciplines">
+      <div class="band band-a"><div class="band-inner">
+        <span>Machine Learning</span><i>✺</i><span>Embedded Systems</span><i>✺</i><span>Front-End</span><i>✺</i><span>Deep Learning</span><i>✺</i>
+        <span>Machine Learning</span><i>✺</i><span>Embedded Systems</span><i>✺</i><span>Front-End</span><i>✺</i><span>Deep Learning</span><i>✺</i>
+      </div></div>
+      <div class="band band-b" aria-hidden="true"><div class="band-inner">
+        <span>Python</span><i>/</i><span>TensorFlow</span><i>/</i><span>Arduino</span><i>/</i><span>JavaScript</span><i>/</i><span>Keras</span><i>/</i><span>scikit-learn</span><i>/</i>
+        <span>Python</span><i>/</i><span>TensorFlow</span><i>/</i><span>Arduino</span><i>/</i><span>JavaScript</span><i>/</i><span>Keras</span><i>/</i><span>scikit-learn</span><i>/</i>
+      </div></div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="about section" id="about">
+      <p class="label mono">( 01 ) About</p>
+      <p class="manifesto" id="manifesto">
+        I studied Electronics &amp; Communication Engineering, so I see the world as signals.
+        I've trained models that read heartbeats and medical images, wired hardware that chases
+        the sun, and hand-coded a website from scratch.
+      </p>
+      <ul class="facts">
+        <li data-fade><span class="fact-num" data-count="4">04</span><span class="mono">Projects built</span></li>
+        <li data-fade><span class="fact-num" data-count="3">03</span><span class="mono">Engineering domains</span></li>
+        <li data-fade><span class="fact-num" data-count="3">03</span><span class="mono">Languages spoken</span></li>
+        <li data-fade><span class="fact-num" data-count="2023" data-from="1999">2023</span><span class="mono">BE graduate</span></li>
+      </ul>
+    </section>
+
+    <!-- ===== Work ===== -->
+    <section class="work" id="work">
+      <div class="work-head section">
+        <p class="label mono">( 02 ) Selected work</p>
+        <h2 class="display" data-split>Things I've <em>built</em></h2>
+      </div>
+
+      <div class="work-pin">
+        <div class="work-track" id="work-track">
+
+          <article class="card">
+            <div class="card-info">
+              <p class="card-num">01</p>
+              <p class="mono card-type">Final-year project</p>
+              <h3 class="card-title">Bone Cancer Prediction</h3>
+              <p class="card-desc">A deep learning model that predicts bone cancer from immunohistochemistry (IHC) images. Images are pre-processed, features are extracted with a DNN built on VGG16, and detection compares the extracted values.</p>
+              <ul class="tags mono"><li>Python</li><li>TensorFlow</li><li>Keras</li><li>Jupyter</li></ul>
+            </div>
+            <div class="card-visual" data-cursor="Live">
+              <canvas class="viz" data-viz="neural" role="img" aria-label="Animated neural network passing signals between layers"></canvas>
+              <span class="viz-tag mono">VGG16 · DNN</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-info">
+              <p class="card-num">02</p>
+              <p class="mono card-type">Internship · Take It Smart</p>
+              <h3 class="card-title">Cardiac Arrhythmia Prediction</h3>
+              <p class="card-desc">A Python model trained on scikit-learn datasets that uses the Random Forest algorithm to predict cardiac arrhythmia, with NumPy for computation and Matplotlib for plotting.</p>
+              <ul class="tags mono"><li>Python</li><li>scikit-learn</li><li>NumPy</li><li>Matplotlib</li></ul>
+            </div>
+            <div class="card-visual" data-cursor="Live">
+              <canvas class="viz" data-viz="ecg" role="img" aria-label="Animated ECG heartbeat trace"></canvas>
+              <span class="viz-tag mono">BPM <span id="bpm">72</span></span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-info">
+              <p class="card-num">03</p>
+              <p class="mono card-type">Mini project · Embedded</p>
+              <h3 class="card-title">Dual-Axis Solar Tracker</h3>
+              <p class="card-desc">A solar panel that finds the most intense sunlight and turns to face it. LDR sensors read the light and an Arduino drives servo motors on two axes, so it captures more energy than a fixed panel. Move over the demo to place the sun.</p>
+              <ul class="tags mono"><li>Arduino</li><li>Arduino IDE</li><li>LDRs</li><li>Servo motors</li></ul>
+            </div>
+            <div class="card-visual solar" id="solar" data-cursor="Move">
+              <svg viewBox="0 0 400 250" class="solar-svg" role="img" aria-label="Interactive solar panel that rotates to face the sun">
+                <defs>
+                  <radialGradient id="sunGlow">
+                    <stop offset="0%" stop-color="#f4ffd1"/>
+                    <stop offset="40%" stop-color="#c8ff3d" stop-opacity=".5"/>
+                    <stop offset="100%" stop-color="#c8ff3d" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+                <line id="beam" x1="0" y1="0" x2="200" y2="182" stroke="#c8ff3d" stroke-width="1" stroke-dasharray="3 6" opacity=".6"/>
+                <g id="sun"><circle r="50" fill="url(#sunGlow)"/><circle r="14" fill="#f4ffd1"/></g>
+                <line x1="0" y1="232" x2="400" y2="232" stroke="#2b2b2b" stroke-width="1"/>
+                <rect x="196" y="182" width="8" height="50" fill="#3a3a3a"/>
+                <g id="panel" transform="translate(200 182)">
+                  <rect x="-72" y="-6" width="144" height="9" rx="1.5" fill="#151515" stroke="#ece9e2" stroke-width="1"/>
+                  <line x1="-36" y1="-6" x2="-36" y2="3" stroke="#ece9e2" stroke-width=".5"/>
+                  <line x1="0" y1="-6" x2="0" y2="3" stroke="#ece9e2" stroke-width=".5"/>
+                  <line x1="36" y1="-6" x2="36" y2="3" stroke="#ece9e2" stroke-width=".5"/>
+                </g>
+                <circle cx="200" cy="182" r="4" fill="#ece9e2"/>
+              </svg>
+              <span class="viz-tag mono">Tracker <span id="solar-out">100</span>% · Fixed <span id="solar-fixed">100</span>%</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-info">
+              <p class="card-num">04</p>
+              <p class="mono card-type">Academic project · Front-end</p>
+              <h3 class="card-title">Event Planner Website</h3>
+              <p class="card-desc">The front end of a website for an event planner, written in plain HTML, CSS, and JavaScript and hosted on GitHub Pages.</p>
+              <ul class="tags mono"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <a class="pill" href="https://34dexter.github.io/Eventrra._/" target="_blank" rel="noopener" data-magnetic><span>Visit live site ↗</span></a>
+            </div>
+            <a class="card-visual browser" href="https://34dexter.github.io/Eventrra._/" target="_blank" rel="noopener" data-cursor="Open" aria-label="Open the Event Planner website">
+              <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span class="mono">34dexter.github.io/Eventrra._</span></div>
+              <div class="browser-body" aria-hidden="true">
+                <span class="mock-title">Eventrra</span>
+                <span class="mock-line"></span><span class="mock-line short"></span>
+                <span class="mock-btn"></span>
+                <div class="mock-cards"><span></span><span></span><span></span></div>
+              </div>
+            </a>
+          </article>
+
+        </div>
+        <div class="work-progress" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="skills section" id="skills">
+      <p class="label mono">( 03 ) Capabilities</p>
+      <h2 class="display" data-split>The <em>toolkit</em></h2>
+      <ul class="caps">
+        <li class="cap" data-fade>
+          <span class="cap-i mono">01</span><h3 class="cap-t">Machine Learning</h3>
+          <ul class="cap-tags mono"><li>Random Forest</li><li>DNN</li><li>VGG16</li><li>scikit-learn</li><li>TensorFlow</li><li>Keras</li></ul>
+        </li>
+        <li class="cap" data-fade>
+          <span class="cap-i mono">02</span><h3 class="cap-t">Languages &amp; Web</h3>
+          <ul class="cap-tags mono"><li>Python</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </li>
+        <li class="cap" data-fade>
+          <span class="cap-i mono">03</span><h3 class="cap-t">Embedded</h3>
+          <ul class="cap-tags mono"><li>Arduino</li><li>Arduino IDE</li><li>LDR sensors</li><li>Servo motors</li></ul>
+        </li>
+        <li class="cap" data-fade>
+          <span class="cap-i mono">04</span><h3 class="cap-t">Data</h3>
+          <ul class="cap-tags mono"><li>NumPy</li><li>Matplotlib</li><li>Jupyter</li></ul>
+        </li>
+        <li class="cap" data-fade>
+          <span class="cap-i mono">05</span><h3 class="cap-t">Tools</h3>
+          <ul class="cap-tags mono"><li>VS Code</li><li>Microsoft Office</li></ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="xp section" id="experience">
+      <p class="label mono">( 04 ) Experience</p>
+      <h2 class="display" data-split>Signal <em>path</em></h2>
+      <ol class="xp-list">
+        <li class="xp-row">
+          <span class="xp-line" aria-hidden="true"></span>
+          <p class="xp-when mono" data-fade>Internship</p>
+          <div class="xp-role" data-fade><h3>Machine Learning Intern</h3><p>Take It Smart (OPC) Pvt. Ltd.</p></div>
+          <p class="xp-desc" data-fade>Built a Python Random Forest model to predict cardiac arrhythmia using scikit-learn datasets, NumPy, and Matplotlib.</p>
+        </li>
+        <li class="xp-row">
+          <span class="xp-line" aria-hidden="true"></span>
+          <p class="xp-when mono" data-fade>3 months</p>
+          <div class="xp-role" data-fade><h3>Sports Analyst</h3><p>Hudl India</p></div>
+          <p class="xp-desc" data-fade>Worked as a Sports Analyst for three months.</p>
+        </li>
+        <li class="xp-row">
+          <span class="xp-line" aria-hidden="true"></span>
+          <p class="xp-when mono" data-fade>2023</p>
+          <div class="xp-role" data-fade><h3>BE, Electronics &amp; Communication</h3><p>Rajarajeswari College of Engineering, Bangalore</p></div>
+          <p class="xp-desc" data-fade>Final-year project in deep learning for bone cancer prediction; mini project in embedded solar tracking.</p>
+        </li>
+      </ol>
+      <a class="pill pill-lg" href="resume/Punith_B_Resume.pdf" target="_blank" rel="noopener" data-magnetic data-cursor="PDF"><span>Download résumé ↓</span></a>
+    </section>
+  </main>
+
+  <!-- ===== Footer / Contact (curtain reveal) ===== -->
+  <div class="footer-wrap" id="contact">
+    <footer class="footer">
+      <p class="label mono">( 05 ) Contact</p>
+      <h2 class="footer-title">Got an idea?<br><em>Let's talk.</em></h2>
+      <div class="footer-cta">
+        <a class="big-btn" href="mailto:34punithb@gmail.com" data-magnetic data-cursor="Write"><span>Say hello</span></a>
+        <div class="footer-mail">
+          <a class="footer-email" href="mailto:34punithb@gmail.com">34punithb@gmail.com</a>
+          <button class="copy mono" id="copy-email" type="button" data-email="34punithb@gmail.com">Copy email</button>
+        </div>
+      </div>
+      <div class="footer-grid mono">
+        <div><p class="muted">Phone</p><a class="roll" href="tel:+919611179873"><span>+91 96111 79873</span></a></div>
+        <div><p class="muted">Elsewhere</p><a class="roll" href="https://github.com/34dexter" target="_blank" rel="noopener"><span>GitHub ↗</span></a></div>
+        <div><p class="muted">Local time</p><p><span id="clock-2">--:--</span> IST</p></div>
+        <div><p class="muted">©<span id="year"></span></p><a class="roll" href="#hero"><span>Back to top ↑</span></a></div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
