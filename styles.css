@@ -284,6 +284,10 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spa
 .pill:hover { color: var(--ink); border-color: var(--acid); }
 .pill:hover::before { transform: translateY(0); border-radius: 0; }
 .pill span { position: relative; }
+.card-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+.card-links .pill { margin-top: 0; }
+.pill-ghost { border-color: var(--line); color: var(--dim); }
+.pill-ghost:hover { color: var(--ink); }
 .pill-lg { margin-top: clamp(60px, 8vw, 110px); padding: 22px 38px; font-size: 18px; }
 
 /* ===================== Skills ===================== */
